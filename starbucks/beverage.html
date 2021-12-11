@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>음료 | Starbucks Coffee Korea</title>
+  <link rel="stylesheet" href="scss/beverage.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;700&family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- 바로가기 링크 -->
+  <div>
+    <a href="" class="text_link">커피 정보 보러가기</a>
+    <a href="" class="text_link">회사 정보 보러가기</a>
+  </div>
+  <header id="beverage_header" class="beverage_header">
+    <h1 class="text_hide">음료 정보 확인하기</h1>
+    <div class="wrap_nav">
+      <a href=""><img src="img/img_starbucks.png" alt="" class="img_logo"></a>
+      <nav>
+        <ul class="list_top">
+          <li><a href="#">Sign in</a></li>
+          <li><a href="#">My Starbucks</a></li>
+          <li><a href="#">Customer Service & Ideas</a></li>
+          <li><a href="#">Find a Store</a></li>
+          <li class="input_search">
+            <input type="search" placeholder="통합검색" id="input_search">
+            <label for="input_search" class="label_btn"><button type="button"></button></label>
+          </li>
+        </ul>
+        <ul class="list_nav">
+          <li><a href="#">COFFEE</a></li>
+          <li>
+            <a href="#">MENU
+              <!-- 소메뉴 -->
+              <div class="list_nav_sub">
+                <ul>
+                  <li><a href="#">음료</a></li>
+                  <li><a href="#">콜드 브루</a></li>
+                  <li><a href="#">브루드 커피</a></li>
+                  <li><a href="#">에스프레소</a></li>
+                  <li><a href="#">프라푸치노</a></li>
+                  <li><a href="#">블렌디드</a></li>
+                  <li><a href="#">스타벅스 피지오</a></li>
+                  <li><a href="#">티(티바나)</a></li>
+                  <li><a href="#">기타 제조 음료</a></li>
+                  <li><a href="#">스타벅스 주스(병음료)</a></li>
+                </ul>
+                <ul>
+                  <li><a href="#">푸드</a></li>
+                  <li><a href="#">브레드</a></li>
+                  <li><a href="#">케이크</a></li>
+                  <li><a href="#">샌드위치 & 샐러드</a></li>
+                  <li><a href="#">따뜻한 푸드</a></li>
+                  <li><a href="#">과일 & 요거트</a></li>
+                  <li><a href="#">스낵 & 미니 디저트</a></li>
+                  <li><a href="#">아이스크림</a></li>
+                </ul>
+                <ul>
+                  <li><a href="#">상품</a></li>
+                  <li><a href="#">머그</a></li>
+                  <li><a href="#">글라스</a></li>
+                  <li><a href="#">플라스틱 텀블러</a></li>
+                  <li><a href="#">스테인리스 텀블러</a></li>
+                  <li><a href="#">보온병</a></li>
+                  <li><a href="#">액세서리</a></li>
+                  <li><a href="#">커피 용품</a></li>
+                  <li><a href="#">패키지 티(타바나)</a></li>
+                </ul>
+                <ul>
+                  <li><a href="#">카드</a></li>
+                  <li><a href="#">실물카드</a></li>
+                  <li><a href="#">e-Gift카드</a></li>
+                </ul>
+                <ul>
+                  <li><a href="#">메뉴이야기</a></li>
+                  <li><a href="#">나이트로 콜드브루</a></li>
+                  <li><a href="#">콜드 브루</a></li>
+                  <li><a href="#">스타벅스 티바나</a></li>
+                </ul>
+              </div>
+            </a>
+          </li>
+          <li><a href="#">STORE</a></li>
+          <li><a href="#">RESPONSIBILITY</a></li>
+          <li><a href="#">STARBUCKS REWARDS</a></li>
+          <li><a href="#">WHAT'S NEW</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="beverage_main" class="beverage_main">
+    <h2 class="text_hide">분류별 음료 보기</h2>
+    <strong>음료</strong>
+    <ul class="list_mini">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">MENU</a></li>
+      <li><a href="#">음료</a></li>
+    </ul>
+    <section id="beverage_group" class="beverage_group">
+      <h3>분류 보기</h3>
+      <button type="button" class="btn_group">열고 닫기</button>
+      <article class="artic_category">
+        <h4>카테고리</h4>
+        <ul class="list_category">
+          <li><label><input type="checkbox"> 전체 상품보기</label></li>
+          <li><label><input type="checkbox"> 콜드 브루 커피</label></li>
+          <li><label><input type="checkbox"> 브루드 커피</label></li>
+          <li><label><input type="checkbox"> 에스프레소</label></li>
+          <li><label><input type="checkbox"> 프라푸치노</label></li>
+          <li><label><input type="checkbox"> 블렌디드</label></li>
+          <li><label><input type="checkbox"> 스타벅스 피지오</label></li>
+          <li><label><input type="checkbox"> 티(티바나)</label></li>
+          <li><label><input type="checkbox"> 기타 제조 음료</label></li>
+          <li><label><input type="checkbox"> 스타벅스 주스(병음료)</label></li>
+        </ul>
+      </article>
+    </section>
+    <section class="beverage_info">
+      <h3 class="text_hide">분류별 음료 정보 보기</h3>
+      <ul class="list_btn_info">
+        <li><button type="button">사진으로 보기</button></li>
+        <li><button type="button">영양정보로 보기</button></li>
+      </ul>
+      <!-- 스타일로 셀렉트 박스를 구현해야 할듯 -->
+      <select name="" id="">
+        <option value="">상세분류</option>
+        <option value="">신규 출시된 메뉴</option>
+        <option value="">한정기간 출시되는 시즌성 메뉴</option>
+      </select>
+      <!-- 일단 콜드 브루 커피 섹션 -->
+      <article class="artic_coldBrew">
+        <h4>콜드 브루 커피</h4>
+        <p>디카페인에 에스프레소 샷 추가 가능 (일부 음료 제외)</p>
+        <ul class="list_info">
+          <li class="text_coffee">
+            <a href="">
+              <img src="" alt="" class="img_coffee">
+            </a>
+            토피 넛 콜드 브루
+          </li>
+        </ul>
+      </article>
+    </section>
+  </main>
+  <footer id="beverage_footer" class="beverage_footer">
+    <div class="list_companyInfo">
+      <ul>
+        <li><a href="#">COMPANY</a></li>
+        <li><a href="#">한눈에 보기</a></li>
+        <li><a href="#">스타벅스 사명</a></li>
+        <li><a href="#">스타벅스 소개</a></li>
+        <li><a href="#">국내 뉴스룸</a></li>
+        <li><a href="#">세계의 스타벅스</a></li>
+        <li><a href="#">글로벌 뉴스룸</a></li>
+      </ul>
+      <ul>
+        <li><a href="#">CORPORATE SALES</a></li>
+        <li><a href="#">단체 및 기업 구매 안내</a></li>
+      </ul>
+      <ul>
+        <li><a href="#">PARTNERSHIP</a></li>
+        <li><a href="#">신규 입점 제의</a></li>
+        <li><a href="#">협력 고객사 등록신청</a></li>
+      </ul>
+      <ul>
+        <li><a href="#">ONLINE COMMUNITY</a></li>
+        <li><a href="#">페이스북</a></li>
+        <li><a href="#">트위터</a></li>
+        <li><a href="#">유튜브</a></li>
+        <li><a href="#">인스타그램</a></li>
+      </ul>
+      <ul>
+        <li><a href="#">RECRUIT</a></li>
+        <li><a href="#">채용 소개</a></li>
+        <li><a href="#">채용 지원하기</a></li>
+      </ul>
+    </div>
+    <img src="" alt="" class="img_award">
+    <ul class="list_terms">
+      <li><a href="">개인정보처리방침</a></li>
+      <li><a href="">영상정보처리기기 운영관리 방침</a></li>
+      <li><a href="">홈페이지 이용약관</a></li>
+      <li><a href="">위치정보 이용약관</a></li>
+      <li><a href="">스타벅스 카드 이용약관</a></li>
+      <li><a href="">비회원 이용약관</a></li>
+      <li><a href="">My DT Pass 서비스 이용약관</a></li>
+      <li><a href="">윤리경영 핫라인</a></li>
+    </ul>
+    <ul class="list_site">
+      <li><a href="">찾아오시는 길</a></li>
+      <li><a href="">신규입점</a></li>
+      <li><a href="">사이트 맵</a></li>
+    </ul>
+    <address>사업자등록번호 : 201-81-21515 <span>(주)스타벅스커피 코리아 대표이사 : 송 데이비드 호섭</span> TEL : 1522-3232 <span>개인정보 책임자 : 하익성</span></address>
+    <small>ⓒ 2021 Starbucks Coffee Company. All Rights Reserved.</small>
+  </footer>
+</body>
+</html>
