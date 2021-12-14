@@ -25,7 +25,7 @@
 스타벅스: https://www.starbucks.co.kr/index.do
 
 ## 🟢빌드 및 실행방법
-github 페이지: 
+github 페이지: https://postop09.github.io/starbucks_clone/beverage.html
 
 ## 🟢개발 환경
 - 개인 페이지 작업
