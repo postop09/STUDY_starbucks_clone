@@ -393,13 +393,23 @@ body {
 .beverage_main .beverage_group {
   border: 1px solid #dddddd;
   border-radius: 7px;
-  padding: 25px 30px 40px;
+  padding: 25px 30px 0;
   position: relative;
 }
 
 .beverage_main .beverage_group h3 {
-  border-bottom: 1px solid #dddddd;
   padding-bottom: 25px;
+}
+
+.beverage_main .beverage_group .btn_pop.on + .list_group_wrap {
+  display: none;
+}
+
+.beverage_main .beverage_group .btn_pop.on img {
+  -webkit-transform: rotateZ(360deg);
+          transform: rotateZ(360deg);
+  position: relative;
+  top: 2px;
 }
 
 .beverage_main .beverage_group .btn_pop {
@@ -426,30 +436,51 @@ body {
           transform: rotateZ(180deg);
 }
 
-.beverage_main .beverage_group .list_group {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.beverage_group .list_group {
+  border-top: 1px solid #dddddd;
 }
 
-.beverage_main .beverage_group .list_group li {
-  width: 200px;
-  margin: 25px 10px 15px 0;
-}
-
-.beverage_main .beverage_group .list_group .btn_group {
+.beverage_group .list_group li {
   display: inline-block;
+  position: relative;
+}
+
+.beverage_group .list_group .btn_group {
+  width: 200px;
+  margin: 40px 10px 25px 0;
+  background-color: #eeece3;
+  opacity: 1;
+  outline: none;
+}
+
+.beverage_group .list_group .btn_group:checked + label {
+  color: #ffffff;
+  background-color: #006633;
+}
+
+.beverage_group .list_group .btn_group:checked:hover + label {
+  -webkit-text-decoration: underline 2px #ffffff;
+          text-decoration: underline 2px #ffffff;
+}
+
+.beverage_group .list_group label {
   border-radius: 5px;
-  width: 100%;
-  height: 35px;
+  width: 200px;
+  height: 40px;
+  padding-top: 8px;
   font-size: 15px;
-  line-height: 35px;
   text-align: center;
   background-color: #eeece3;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  cursor: pointer;
 }
 
-.beverage_group .artic_category {
-  display: block;
+.beverage_group .artic_category .list_category {
+  margin-bottom: 40px;
 }
 
 .beverage_group .artic_category .list_category li {
@@ -811,33 +842,14 @@ body {
 
 @media screen and (max-width: 1145px) {
   .artic_coldbrew .list_info {
-    overflow: hidden;
     padding-left: 3%;
   }
   .artic_coldbrew .list_info .text_coffee {
-    float: left;
     width: 22%;
-    font-size: 14px;
-    text-align: center;
     margin: 10px;
   }
-  .artic_coldbrew .list_info a {
-    display: block;
-    max-width: 250px;
-    max-height: 260px;
-    margin-bottom: 15px;
-    overflow: hidden;
-  }
-  .artic_coldbrew .list_info .img_coffee {
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    -webkit-transition: all .5s;
-    transition: all .5s;
-  }
-  .artic_coldbrew .list_info .img_coffee:hover {
-    -webkit-transform: scale(110%);
-            transform: scale(110%);
+  .artic_coldbrew .list_info .text_coffee .img_coffee {
+    vertical-align: bottom;
   }
   .beverage_footer .list_companyInfo {
     max-width: 760px;
@@ -880,17 +892,19 @@ body {
     font-size: 14px;
     margin: 7px;
   }
-  .artic_coldbrew .list_info a {
-    max-width: 250px;
-    max-height: 260px;
-    margin-bottom: 15px;
-  }
 }
 
 @media screen and (max-width: 670px) {
-  .beverage_main .beverage_group .list_group li {
+  .beverage_group .list_group {
+    overflow: hidden;
+  }
+  .beverage_group .list_group li {
+    width: 50%;
+    float: left;
+  }
+  .beverage_group .list_group label {
     width: 100%;
-    margin: 25px 10px 15px 0;
+    font-size: 14px;
   }
   .artic_category {
     display: block;
