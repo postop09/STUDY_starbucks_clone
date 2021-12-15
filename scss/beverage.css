@@ -1,9 +1,3 @@
-@font-face {
-  font-family: 'Maven Pro', sans-serif;
-  font-family: 'Noto Sans KR', sans-serif;
-  src: url();
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -12,6 +6,116 @@
   color: black;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+@-webkit-keyframes awardSlide {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  11% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  16% {
+    -webkit-transform: translateY(-85px);
+            transform: translateY(-85px);
+  }
+  27% {
+    -webkit-transform: translateY(-85px);
+            transform: translateY(-85px);
+  }
+  32% {
+    -webkit-transform: translateY(-172px);
+            transform: translateY(-172px);
+  }
+  45% {
+    -webkit-transform: translateY(-172px);
+            transform: translateY(-172px);
+  }
+  50% {
+    -webkit-transform: translateY(-250px);
+            transform: translateY(-250px);
+  }
+  63% {
+    -webkit-transform: translateY(-250px);
+            transform: translateY(-250px);
+  }
+  68% {
+    -webkit-transform: translateY(-335px);
+            transform: translateY(-335px);
+  }
+  79% {
+    -webkit-transform: translateY(-335px);
+            transform: translateY(-335px);
+  }
+  84% {
+    -webkit-transform: translateY(-425px);
+            transform: translateY(-425px);
+  }
+  95% {
+    -webkit-transform: translateY(-425px);
+            transform: translateY(-425px);
+  }
+  100% {
+    -webkit-transform: translateY(-510px);
+            transform: translateY(-510px);
+  }
+}
+
+@keyframes awardSlide {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  11% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  16% {
+    -webkit-transform: translateY(-85px);
+            transform: translateY(-85px);
+  }
+  27% {
+    -webkit-transform: translateY(-85px);
+            transform: translateY(-85px);
+  }
+  32% {
+    -webkit-transform: translateY(-172px);
+            transform: translateY(-172px);
+  }
+  45% {
+    -webkit-transform: translateY(-172px);
+            transform: translateY(-172px);
+  }
+  50% {
+    -webkit-transform: translateY(-250px);
+            transform: translateY(-250px);
+  }
+  63% {
+    -webkit-transform: translateY(-250px);
+            transform: translateY(-250px);
+  }
+  68% {
+    -webkit-transform: translateY(-335px);
+            transform: translateY(-335px);
+  }
+  79% {
+    -webkit-transform: translateY(-335px);
+            transform: translateY(-335px);
+  }
+  84% {
+    -webkit-transform: translateY(-425px);
+            transform: translateY(-425px);
+  }
+  95% {
+    -webkit-transform: translateY(-425px);
+            transform: translateY(-425px);
+  }
+  100% {
+    -webkit-transform: translateY(-510px);
+            transform: translateY(-510px);
+  }
 }
 
 body {
@@ -127,6 +231,17 @@ body {
   font-size: 13px;
 }
 
+.beverage_header .list_top li ~ li:not(li:last-child)::before {
+  content: '';
+  display: inline-block;
+  width: 1px;
+  height: 15px;
+  background-color: #999999;
+  position: relative;
+  top: 2px;
+  right: 15px;
+}
+
 .beverage_header .list_top .input_search input {
   display: none;
 }
@@ -176,10 +291,6 @@ body {
 
 .beverage_header .list_nav_sub {
   display: none;
-}
-
-.beverage_header .list_nav_sub.on {
-  display: block;
   padding-top: 20px;
   background-color: #2c2a29;
   position: absolute;
@@ -321,12 +432,16 @@ body {
   display: flex;
 }
 
+.beverage_main .beverage_group .list_group li {
+  width: 200px;
+  margin: 25px 10px 15px 0;
+}
+
 .beverage_main .beverage_group .list_group .btn_group {
   display: inline-block;
   border-radius: 5px;
-  width: 200px;
+  width: 100%;
   height: 35px;
-  margin: 25px 10px 15px 0;
   font-size: 15px;
   line-height: 35px;
   text-align: center;
@@ -498,23 +613,18 @@ body {
 
 .artic_coldbrew .text_coldbrew {
   margin-bottom: 20px;
+  padding: 20px;
   background-color: #f6f5ef;
 }
 
 .artic_coldbrew h4 {
   display: inline-block;
+  margin-right: 65px;
   font-size: 18px;
-  padding: 20px;
-}
-
-.artic_coldbrew p {
-  display: inline-block;
-  margin-left: 45px;
-  font-size: 13px;
   position: relative;
 }
 
-.artic_coldbrew p::before {
+.artic_coldbrew h4::after {
   content: '';
   display: block;
   width: 50px;
@@ -524,30 +634,31 @@ body {
   background-position: center center;
   background-repeat: no-repeat;
   position: absolute;
-  top: -15px;
-  left: -55px;
+  top: -10px;
+  right: -60px;
+}
+
+.artic_coldbrew p {
+  display: inline-block;
+  font-size: 13px;
 }
 
 .artic_coldbrew .list_info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-column-gap: 25px;
-          column-gap: 25px;
-  row-gap: 30px;
+  overflow: hidden;
 }
 
 .artic_coldbrew .list_info .text_coffee {
+  float: left;
   font-size: 14px;
   text-align: center;
+  margin: 10px;
 }
 
 .artic_coldbrew .list_info a {
   display: block;
-  width: 250px;
-  height: 260px;
+  max-width: 250px;
+  max-height: 260px;
+  margin-bottom: 15px;
   overflow: hidden;
 }
 
@@ -576,6 +687,10 @@ body {
   color: #ffffff;
 }
 
+.beverage_footer .media_list_companyInfo {
+  display: none;
+}
+
 .beverage_footer .list_companyInfo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -594,6 +709,14 @@ body {
   margin-bottom: 10px;
 }
 
+.beverage_footer .media_list_util {
+  display: none;
+}
+
+.beverage_footer .list_award_wrap {
+  background-color: #282828;
+}
+
 .beverage_footer .list_award {
   margin-top: 60px;
   background-color: #282828;
@@ -605,14 +728,33 @@ body {
   padding: 20px;
 }
 
+.beverage_footer .list_award .media_img_award {
+  display: none;
+}
+
 .beverage_footer .list_terms {
   margin-top: 30px;
   text-align: center;
 }
 
+.beverage_footer .list_terms .text_color_g {
+  color: #38ca44;
+}
+
 .beverage_footer .list_terms li {
   display: inline-block;
   padding: 0 10px;
+}
+
+.beverage_footer .list_terms li ~ li::before {
+  content: '';
+  display: inline-block;
+  width: 1px;
+  height: 15px;
+  background-color: #999999;
+  position: relative;
+  top: 2px;
+  right: 13px;
 }
 
 .beverage_footer .list_site {
@@ -669,8 +811,33 @@ body {
 
 @media screen and (max-width: 1145px) {
   .artic_coldbrew .list_info {
-    max-width: 800px;
-    margin: 0 auto;
+    overflow: hidden;
+    padding-left: 3%;
+  }
+  .artic_coldbrew .list_info .text_coffee {
+    float: left;
+    width: 22%;
+    font-size: 14px;
+    text-align: center;
+    margin: 10px;
+  }
+  .artic_coldbrew .list_info a {
+    display: block;
+    max-width: 250px;
+    max-height: 260px;
+    margin-bottom: 15px;
+    overflow: hidden;
+  }
+  .artic_coldbrew .list_info .img_coffee {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+  }
+  .artic_coldbrew .list_info .img_coffee:hover {
+    -webkit-transform: scale(110%);
+            transform: scale(110%);
   }
   .beverage_footer .list_companyInfo {
     max-width: 760px;
@@ -687,7 +854,7 @@ body {
   .beverage_header .media_nav_mid {
     display: block;
     overflow: hidden;
-    padding: 20px 20px 10px;
+    padding: 10px 20px 10px;
   }
   .beverage_header .media_nav_mid .media_img_logo {
     width: 50px;
@@ -698,15 +865,171 @@ body {
   }
   .beverage_header .media_nav_mid .media_nav li {
     display: inline-block;
+    padding-top: 10px;
     margin-left: 20px;
   }
   .beverage_header .media_nav_mid .media_img_nav {
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 32px;
   }
   .artic_coldbrew .list_info {
-    max-width: 525px;
+    padding-left: 3%;
+  }
+  .artic_coldbrew .list_info .text_coffee {
+    width: 30%;
+    font-size: 14px;
+    margin: 7px;
+  }
+  .artic_coldbrew .list_info a {
+    max-width: 250px;
+    max-height: 260px;
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .beverage_main .beverage_group .list_group li {
+    width: 100%;
+    margin: 25px 10px 15px 0;
+  }
+  .artic_category {
+    display: block;
+    overflow-y: scroll;
+    height: 90px;
+  }
+  .list_category li {
+    display: block;
+    width: 80%;
+    margin: 5px 0;
+    font-size: 14px;
+  }
+  .beverage_info .list_btn_info {
+    overflow: hidden;
+  }
+  .beverage_info .list_btn_info li {
+    float: left;
+    width: 50%;
+    margin: 80px 0 20px 0;
+  }
+  .beverage_info .list_btn_info .btn_info {
+    width: 100%;
+    padding: 10px 10px 10px 30px;
+    text-align: left;
+  }
+  .beverage_info .list_btn_info .btn_info::before {
+    width: 14px;
+    height: 14px;
+    top: 11px;
+    left: 9px;
+  }
+  .beverage_info .list_btn_info .btn_tableInfo::before {
+    width: 20px;
+    height: 19px;
+    top: 9px;
+    left: 9px;
+  }
+  .beverage_info .info_img {
+    position: relative;
+  }
+  .beverage_info .cont_select {
+    float: none;
+    width: 100%;
+    position: absolute;
+    top: -130px;
+    left: 0;
+  }
+  .beverage_info .btn_select {
+    display: block;
+    width: 100%;
+  }
+  .beverage_info .list_select {
+    width: 100%;
+  }
+  .artic_coldbrew .list_info {
+    padding-left: 5%;
+  }
+  .artic_coldbrew .list_info .text_coffee {
+    width: 43%;
+    font-size: 14px;
+    margin: 5px;
+  }
+  .artic_coldbrew .list_info a {
+    margin-bottom: 3px;
+  }
+  #beverage_footer {
+    margin-top: 50px;
+  }
+  .beverage_footer a {
+    display: inline-block;
+  }
+  .beverage_footer .media_list_companyInfo {
+    display: block;
+  }
+  .beverage_footer .list_companyInfo {
+    display: block;
+    padding: 0 20px;
+  }
+  .beverage_footer .list_companyInfo .text_toplist {
+    display: inline-block;
+    border-top: 2px solid #ffffff;
+    margin: 10px 0 0;
+    font-size: 16px;
+  }
+  .beverage_footer .list_companyInfo li {
+    display: block;
+  }
+  .beverage_footer .list_companyInfo a {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 14px;
+  }
+  .beverage_footer .media_list_util {
+    display: inline-block;
+    margin-top: 10px;
+    text-align: center;
+  }
+  .beverage_footer .media_list_util li {
+    display: inline-block;
+  }
+  .beverage_footer .media_list_util a {
+    display: inline-block;
+    border: 2px solid #ffffff;
+    border-radius: 3px;
+    width: 150px;
+    padding: 10px 20px;
+    line-height: 30px;
+    margin-right: 5px;
+    font-size: 20px;
+  }
+  .beverage_footer .list_award {
+    overflow: hidden;
+    width: 300px;
+    height: 90px;
+    margin: 10px auto;
+  }
+  .beverage_footer .list_award li {
+    display: block;
+    width: 290px;
     margin: 0 auto;
+    padding: 20px 0;
+    -webkit-animation: awardSlide 20s infinite;
+            animation: awardSlide 20s infinite;
+  }
+  .beverage_footer .list_award .media_img_award {
+    display: block;
+    margin: 0 auto;
+  }
+  .beverage_footer .list_ceoInfo {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .artic_coldbrew .list_info .text_coffee {
+    font-size: 11px;
+  }
+  .text_coldbrew p {
+    font-size: 11px;
   }
 }
 /*# sourceMappingURL=beverage.css.map */
