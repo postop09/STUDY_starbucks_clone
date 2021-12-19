@@ -26,33 +26,35 @@ function hideGroup() {
 }
 hideGroup();
 
-function changeTheme() {
-  const btn = document.getElementsByClassName('btn_group');
-  console.log(btn);
-  const theme = document.getElementsByClassName('artic_category');
-  console.log(theme);
-  const three = document.querySelector('#btn_cate');
-  console.log(three);
-  const four = document.querySelectorAll('.btn_group');
-  console.log(four);
-  const five = document.querySelectorAll('.list_group input[checked]');
-  console.log(five);
-  const six = document.querySelectorAll('input[name="group"]');
-  console.log(six);
+function changeGroup() {
+  const cate = document.getElementsByClassName('artic_category');
+  const btn = document.querySelector('#btn_cate');
+  const theme = document.getElementsByClassName('artic_theme');
+  const btnTwo = document.querySelector('#btn_theme');
 
-  three.addEventListener('change', () => {
+  btn.addEventListener('change', () => {
+    cate[0].classList.toggle('on');
+  })
+  btn.addEventListener('change', () => {
+    theme[0].classList.toggle('on');
+  })
+  btnTwo.addEventListener('change', () => {
+    cate[0].classList.toggle('on');
+  })
+  btnTwo.addEventListener('change', () => {
     theme[0].classList.toggle('on');
   })
 }
-changeTheme();
+changeGroup();
 
-// function coffee() {
-//   const check = document.querySelector('.btn_coldbrew');
-//   console.log(check);
-//   const coldBrew = document.querySelector('.artic_coldbrew');
-//   console.log(coldBrew);
-//   check.addEventListener('change', () => {
-//     coldBrew.classList.toggle('on');
-//   })
-// }
-// coffee();
+function coffee() {
+  const check = document.querySelector('.btn_coldbrew');
+  console.log(check);
+  const coldBrew = document.querySelector('.artic_coldbrew');
+  console.log(coldBrew);
+  check.addEventListener('change', () => {
+    coldBrew.classList.toggle('on');
+  })
+}
+coffee();
+

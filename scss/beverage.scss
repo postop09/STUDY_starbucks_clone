@@ -380,6 +380,9 @@ body {
       }
     }
   }
+  .artic_theme.on {
+    display: block;
+  }
   .artic_theme {
     display: none;
   }
@@ -628,7 +631,7 @@ body {
       height: 15px;
       background-color: #999999;
       position: relative;
-      top: 2px;
+      top: 3px;
       right: 13px;
     }
   }
@@ -801,8 +804,6 @@ body {
       width: 100%;
     }
   }
-  // 조금더 고민해봐야 할듯...
-  // 리스트의 이미지가 동적이지 않은 문제.
   .artic_coldbrew {
     .list_info {
       padding-left: 5%;

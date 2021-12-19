@@ -501,6 +501,10 @@ body {
   cursor: pointer;
 }
 
+.beverage_group .artic_theme.on {
+  display: block;
+}
+
 .beverage_group .artic_theme {
   display: none;
 }
@@ -801,7 +805,7 @@ body {
   height: 15px;
   background-color: #999999;
   position: relative;
-  top: 2px;
+  top: 3px;
   right: 13px;
 }
 
