@@ -363,7 +363,11 @@ body {
       cursor: pointer;
     }
   }
+  .artic_category.on {
+    display: none;
+  }
   .artic_category {
+    display: block;
     .list_category {
       margin-bottom: 40px;
       li {
@@ -375,6 +379,9 @@ body {
         cursor: pointer;
       }
     }
+  }
+  .artic_theme {
+    display: none;
   }
 }
 .beverage_info {
@@ -499,7 +506,11 @@ body {
     background-color: #e4ffe8;
   }
 }
+.artic_coldbrew.on {
+  display: block;
+}
 .artic_coldbrew{
+  display: none;
   clear: both;
   .text_coldbrew {
     margin-bottom: 20px;
@@ -655,9 +666,7 @@ body {
     font-size: 12px;
   }
 }
-.artic_theme {
-  display: none;
-}
+
 .info_table {
   display: none;
 }
