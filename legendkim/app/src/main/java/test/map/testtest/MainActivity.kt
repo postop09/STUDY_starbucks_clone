@@ -11,6 +11,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         //두번째 기능 오
         //세번쨰 오예앙
+        //ㅇㅇㅇ
 
     }
 }
