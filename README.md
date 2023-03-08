@@ -25,7 +25,7 @@
 스타벅스: https://www.starbucks.co.kr/index.do
 
 ## 🟢빌드 및 실행방법
-- [윤식 제작 페이지로 이동](https://postop09.github.io/starbucks_clone/beverage.html)
+- [윤식 제작 페이지로 이동](https://postop09.github.io/STUDY_starbucks_clone/beverage.html)
 - [누리님 제작 페이지](https://github.com/nurimeansworld/clone_starbucks)
 - [정배님 제작 페이지](https://github.com/tood21/starbucks_clone)
 - [상돈님 제작 페이지](https://github.com/Sangdon1029/Starbucks-clone)
